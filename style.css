@@ -1,0 +1,103 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(147, 228, 255);
+
+}
+
+.main div{
+    float: left;    
+    padding: 10px;
+}
+
+body h1 {
+    text-align: center;
+    font-size: 1.75em;
+}
+
+aside{
+    border: 1px solid black;
+    float: right;
+    padding: 3px;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+p{
+    clear: right;
+    padding: 7px;
+}
+
+section {
+    height: 145px;
+}
+
+/********************Colors and hovers********************/
+
+aside:hover{
+    box-shadow: 2px 2px black;
+}
+
+.main :nth-child(1) aside{
+    background-color: rgb(42, 105, 6);
+}
+.main :nth-child(2) aside{
+    background-color: rgb(255, 179, 0);
+}
+.main :nth-child(3) aside{
+    background-color: rgb(163, 0, 0);
+}
+
+
+.main :nth-child(1) section{
+    background-color: rgba(7, 228, 37, 0.863);
+}
+    
+.main :nth-child(2) section{
+    background-color: rgb(255, 230, 0);
+}
+.main :nth-child(3) section{
+    background-color: rgb(223, 0, 0);
+}
+
+
+
+/********************Large device********************/
+
+@media screen and (min-width: 992px) {
+    .col-lg-4, .col-md-6, .col-md-12, .col-sm-12 {
+        float: left;
+    }
+
+    .col-lg-4{
+        width: 33%;  
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .col-lg-4, .col-md-6, .col-md-12, .col-sm-12 {
+        float: left;
+    }
+    .col-md-6{
+        width: 50%; 
+    }
+    .col-md-12{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-lg-4, .col-md-6, .col-md-12, .col-sm-12 {
+        float: left;
+    }
+
+    .col-sm-12{
+        width: 100%;  
+    }
+}
+
